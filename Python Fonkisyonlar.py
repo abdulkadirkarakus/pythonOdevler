@@ -10,4 +10,4 @@ def bolunenSayiBulma(min_sayi,max_sayi,bolunecek_sayi ):
     return sayac,bolununler
 
 
-print(bolunenSayiBulma(1,15,5))
+print(bolunenSayiBulma(1,150,5))
