@@ -11,3 +11,6 @@ def bolunenSayiBulma(min_sayi,max_sayi,bolunecek_sayi ):
 
 
 print(bolunenSayiBulma(1,150,5))
+
+
+

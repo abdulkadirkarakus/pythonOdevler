@@ -4,11 +4,11 @@ onlar = ["", "On", "Yirmi", "Otuz", "Kırk", "Elli", "Altmış", "Yetmiş", "Sek
 sayi = int(input("Sayı:"))
 
 def atama(sayi):
-    if  10 <= sayi  or  sayi >= 99:
-       print("İki basamaklı sayi giriniz ")
+    if  10 <= sayi  and  sayi <= 99:
 
-
-    return okunus(sayi)
+        return okunus(sayi)
+    else:
+        print("İki basamaklı sayi yaziniz:")
 
 
 def okunus(sayi):
@@ -19,4 +19,5 @@ def okunus(sayi):
     return onlar[ikinci] + " " + birler[birinci]
 #sayi = int(input("Sayı:"))
 
-print(okunus(sayi))
+
+print(atama(sayi))
