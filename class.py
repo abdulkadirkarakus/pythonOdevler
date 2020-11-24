@@ -8,12 +8,12 @@ class Insan:
         self.yetenekler = []
 
     def kisi_bilgileri(self):
-        return 'f Ad: {self.ad}, self.soyad,self.yas,self.ulke,self.sehir'
+        return 'f Ad: {self.ad}, Soyad: {self.soyad},Yas: {self.yas},Ulke:{self.ulke},Sehir:{self.sehir}'
 
     def yetenek_ekle(self):
         self.yetenekler.append(self.yetenekler)
         return self.yetenekler
 
-insan1 = Insan("Abdülkadir", )
-insan1.yetenekler("")
+insan1 = Insan("Abdülkadir","karakus","24","Tr","Antep" )
+insan1.yetenekler("Yazılımcı")
 print(insan1.kisi_bilgileri())
