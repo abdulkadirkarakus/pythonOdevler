@@ -7,5 +7,20 @@ class  WebPush:
         self.end_date=end_date
         self.language=language
         self.push_type=push_type
+        optin: bool
+    def send_push(self):
+        print("Push gönderildi !")
+
+class TriggerPush(WebPush):
+
+    pass
+class BulkPush(WebPush):
+    pass
+class SegmentPush(WebPush):
+    pass
+class PriceAlertPush(WebPush):
+    pass
+class InstockPush(WebPush):
+    pass
 
 

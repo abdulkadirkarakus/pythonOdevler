@@ -15,5 +15,10 @@ class Insan:
         return self.yetenekler
 
 insan1 = Insan("Abdülkadir","karakus","24","Tr","Antep" )
-insan1.yetenekler("Yazılımcı")
-print(insan1.kisi_bilgileri())
+insan1.yetenekler.append('Yazılımcı')
+insan1.kisi_bilgileri()
+
+print("AdSoyad :",insan1.ad,insan1.soyad)
+print("Yaşı",insan1.yas)
+print("Ülke:",insan1.ulke,"Şehir:",insan1.sehir)
+print("Yetenekleri: ",insan1.yetenekler)
