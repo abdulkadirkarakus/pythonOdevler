@@ -6,19 +6,13 @@ class Insan:
         self.ulke = ulke
         self.sehir = sehir
         self.yetenekler = []
-
     def kisi_bilgileri(self):
-        return 'f Ad: {self.ad}, Soyad: {self.soyad},Yas: {self.yas},Ulke:{self.ulke},Sehir:{self.sehir}'
+        return f' Ad: { self.ad }, Soyad: { self.soyad },Yas: { self.yas },Ulke:{ self.ulke },Sehir:{ self.sehir }'
+    def yetenek_ekle(self,yetenek):
+        self.yetenekler.append(yetenek)
 
-    def yetenek_ekle(self):
-        self.yetenekler.append(self.yetenekler)
-        return self.yetenekler
-
-insan1 = Insan("Abdülkadir","karakus","24","Tr","Antep" )
-insan1.yetenekler.append('Yazılımcı')
-insan1.kisi_bilgileri()
-
-print("AdSoyad :",insan1.ad,insan1.soyad)
-print("Yaşı",insan1.yas)
-print("Ülke:",insan1.ulke,"Şehir:",insan1.sehir)
-print("Yetenekleri: ",insan1.yetenekler)
+yeni_insan = Insan("Abdülkadir", "karakus", "24", "Tr", "Antep")
+yeni_insan.yetenek_ekle('Bisiklete binmek.')
+yeni_insan.yetenek_ekle('yemek yemek.')
+print(yeni_insan.kisi_bilgileri())
+print(yeni_insan.yetenekler)
